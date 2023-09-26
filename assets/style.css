@@ -45,6 +45,10 @@ body {
     display: inline-block;
     margin-left: 25px;
 }
+/* .navbar img {
+    float:left;
+    display: inline-block;
+} */ 
 
 /* <!-- below is my nav bar with the highlight links--> */
 
@@ -85,12 +89,24 @@ p {
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color:rgb(232, 231, 232);
-}
-
-.contact h3,.resume h3 {
-    margin-right: auto;
     text-align: center;
 }
+
+aside {
+    display: block;
+    float: right;
+}
+
+/* aside h3 {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid rgb(232, 231, 232);
+} */
+/* .contact h3,.resume h3 {
+    margin-right: auto;
+    text-align: center;
+    flex-direction: column-reverse; */
+
 
 /* .contact-me,.resume {
     margin-top: 40px;
