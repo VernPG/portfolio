@@ -4,19 +4,12 @@
     margin: 0;
 }
 
-/* body {
-    /* background-color: rgb(181, 236, 217); */
-    /* background-image: url('bg image.jpeg');
-
-} */ */
 body {
     background-position: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     line-height: 1.5;
 
 }
-
-
 
 .header {
     padding: 30px;
@@ -52,16 +45,6 @@ body {
     margin-left: 25px;
 }
 
-/* .navbar img {
-    display:inline-block;
-    justify-content: flex-end;
-    float: left;
-    border-radius: 50%;
-    border: 5px solid goldenrod;
-    padding: 0%;
-    width: 150px;
-}  */
-
 /* <!-- below is my nav bar with the highlight links--> */
 
 a {
@@ -74,13 +57,13 @@ p {
 
 .hgroup {
     display: flex;
-    /* justify-content: space-between; */
-    justify-content: flex-start;
-    gap: 30px;
+    justify-content: space-between;
+    column-gap: 30px;
 }
 
 main {
     flex: 1 0 75%;
+
 }
 
 
@@ -88,19 +71,21 @@ main {
     margin-bottom: 20px;
     /* padding: 50px;
     padding-bottom: 50px; */
-    width:75%;
+    width:70%;
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: rgb(232, 231, 232);
     color: black;
+    order: 1;
   
 }
 
 aside {
     flex: 0 0 25%;
+    align-self: auto;
     order: 2;
     margin-bottom: 20px;
-    padding: 20px;
+    /* padding: 20px; */
     clear: both;
     float: right;
     width: 25%;
