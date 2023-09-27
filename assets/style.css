@@ -5,6 +5,8 @@
 }
 
 body {
+    display:flex;
+    flex-direction: column;
     background-position: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     line-height: 1.5;
@@ -17,6 +19,7 @@ body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: rgb(232, 231, 232);
     color: goldenrod;
+    font-weight: bold;
 }
 
 .header h1 {
@@ -37,18 +40,26 @@ body {
 }
 
 .header nav ul {
-    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+    /* list-style-type: none; */
 }
 
 .header nav ul li {
     display: inline-block;
     margin-left: 25px;
+    /* display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+    list-style-type: none; */
 }
 
 /* <!-- below is my nav bar with the highlight links--> */
 
 a {
     color: rgb(117, 114, 114);
+    text-decoration: none;
 }
 
 p {
@@ -104,43 +115,11 @@ aside {
     padding: 0%;
     width: 150px;
 }
-/* .contact {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color:rgb(232, 231, 232);
-    text-align: center;
-} */
+
 
 aside {
     flex: 1 0 25%;
 }
-
-/* aside h3 {
-    display: block;
-    padding: 10px;
-    border-bottom: 1px solid rgb(232, 231, 232);
-} */
-/* .contact h3,.resume h3 {
-    margin-right: auto;
-    text-align: center;
-    flex-direction: column-reverse; */
-
-
-/* .contact-me,.resume {
-    margin-top: 40px;
-    text-align: center;
-
-} */
-
-
-
-
-
 
 
 
@@ -156,4 +135,14 @@ aside {
     font-size: 10px;
     text-align: center;
 
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    main {
+        max-width: 120px;
+    }
 }
