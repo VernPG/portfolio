@@ -80,14 +80,33 @@ main {
 
 .about,.work {
     margin-bottom: 20px;
-    /* padding: 50px;
-    padding-bottom: 50px; */
-    width:70%;
-    height: 100%;
+    padding: 50px;
+    height: 300px;
+    width: fit-content;
+    clear: both;
+    /* height: 100%; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: rgb(232, 231, 232);
-    color: black;
+    color: rgb(117, 114, 114);
+    font-weight: bold;
     order: 1;
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.hgroup img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    /* border: 1px;
+    border-color: goldenrod; */
+
+
+}
+.float-left {
+    float: left;
+    margin-right: 50px;
   
 }
 
@@ -103,13 +122,16 @@ aside {
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color:rgb(232, 231, 232);
+    color: rgb(117, 114, 114);
+    font-weight: bolder;
     text-align: center;
+
 }
 
 .contact img {
     display:inline-block;
     justify-content: flex-end;
-    float:inline-start
+    float:inline-start;
     border-radius: 50%;
     border: 5px solid goldenrod;
     padding: 0%;
@@ -137,12 +159,21 @@ aside {
 
 }
 
+@media screen and (max-width: 992px) {
+    header {
+    flex-direction: column;
+  }
+    main {
+        width: 50%;
+ 
+    }
+}
 @media screen and (max-width: 768px) {
     header {
       flex-direction: column;
     }
   
     main {
-      max-width: 1200px;
+      width: 100;
     }
   }
