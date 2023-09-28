@@ -42,4 +42,4 @@
 
 ## [Follow this link to view my PORTFOLIO](https://vernpg.github.io/portfolio/)
 
-![Preview image]()
+![Preview image](./images/Screen%20Shot%202023-09-28%20at%205.40.12%20PM.png)
